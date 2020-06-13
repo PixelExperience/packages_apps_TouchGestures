@@ -12,7 +12,7 @@
     <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="24" />
 
     <application
-        android:label="Touchscreen Gestures"
+        android:label="@string/touchscreen_gesture_settings_title"
         android:persistent="true"
         android:supportsRtl="true">
 
@@ -21,8 +21,6 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
-        <activity android:name=".KeyHandler" />
 
         <activity
             android:name=".TouchscreenGestureSettings"
